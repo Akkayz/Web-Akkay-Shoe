@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Website bán giày</title>
+<link href="Css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header>
+		<img src="Images/Header.jpg" width="100%" height="255px">
+		<h1 class="tenshop"><span>akkay&nbsp;</span> <i>shoes</i></h1>
+	</header>
+	<nav>
+		<ul>
+		<li><a href="Trangchu.html">Trang chủ</a></li>
+	    |
+	    <li><a href="Gioithieu.html">Giới thiệu</a></li>
+	    |
+	    <li><a href="Sanpham.html">Sản phẩm</a></li>
+	    |
+	    <li><a href="Dangnhap.html">Đăng nhập</a></li>
+	    |
+	    <li><a href="Dangki.html">Đăng kí </a></li>
+	    |
+	    <li><a href="Thanhtoan.html">Thanh toán</a></li>
+		<a onClick="showcart()"><img src="Icon/cart-arrow-down-solid.svg" width="19" id="icon"></a>
+		</ul>
+		<div id="showcart">
+			<table>
+				<tr>
+					<th>STT</th>
+					<th>Hinh</th>
+					<th>Tensp</th>
+					<th>Dongia</th>
+					<th>Soluong</th>
+					<th>Tongtien</th>
+				</tr>
+				<tbody id="">
+					
+				</tbody>
+			</table>
+		  <a href="Thanhtoan.html">Thanh toan</a>
+		</div>
+	</nav>
+	<article>
+                <div>                    
+					<h1 >GIỎ HÀNG</h1>
+                    <table>
+                        <tr>
+                            <th>STT</th>
+                            <th>Hình</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Đơn giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền (VNĐ)</th>
+                        </tr>
+                        <tbody id="mycart">
+						
+						</tbody>
+                    </table>
+                </div>
+                <div class="row mb">
+                    <button class="dongy">ĐỒNG Ý ĐẶT HÀNG</button>
+                </div>
+            </div>
+     </article>
+	<footer>
+	  <p>Copyright&copy;2022 - AKKAY SHOE - Web bán giày hàng đầu Việt Nam</p><br>
+			<p>Website được phát triển để bán các loại giày chất lượng tại Việt Nam</p><br>
+			<p>Liên hệ: Akkayshoe@gmail.com</p>
+	</footer>
+	<script src="Javascript/Shopcart.js">
+	</script>
+	<script>
+		shogiohang_trangthanhtoan();
+	</script>
+
+</body>
+</html>

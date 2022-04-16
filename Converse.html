@@ -1,0 +1,136 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/Sanpham.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Website bán giày</title>
+<!-- InstanceEndEditable -->
+<link href="Css/style.css" rel="stylesheet" type="text/css">
+<script> function themvaogiohang(x)
+		{
+			var sanphamhot = x.parentElement.children; 
+			alert(sanphamhot[2].children[0].innerText);
+			
+		}
+</script>
+
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+
+</head>
+<body>
+	<header>
+		<img src="Images/Header.jpg" width="100%" height="255px">
+		<h1 class="tenshop"><span>akkay&nbsp;</span> <i>shoes</i></h1>
+	</header>
+	<!-- InstanceBeginEditable name="nav" -->
+	<nav>
+		<ul>
+		<li><a href="Trangchu.html">Trang chủ</a></li>
+	    |
+	    <li><a href="Gioithieu.html">Giới thiệu</a></li>
+	    |
+	    <li><a href="Sanpham.html">Sản phẩm</a></li>
+	    |
+	    <li><a href="Dangnhap.html">Đăng nhập</a></li>
+	    |
+	    <li><a href="Dangki.html">Đăng kí </a></li>
+	    |
+	    <li><a href="Thanhtoan.html">Thanh toán</a></li>
+		<a onClick="showcart()"><img src="Icon/cart-arrow-down-solid.svg" width="19" id="icon"></a>
+		</ul>
+		<div id="showcart">
+			<table>
+				<tr>
+					<th>STT</th>
+					<th>Hinh</th>
+					<th>Tensp</th>
+					<th>Dongia</th>
+					<th>Soluong</th>
+					<th>Tongtien</th>
+					<th>Xoa</th>
+				</tr>
+				<tbody id="mycart">
+					
+				</tbody>
+			</table>
+		  <a href="Thanhtoan.html">Thanh toan</a>
+			<button onClick="xoatatca()">Xoa tat ca</button>
+		</div>
+	</nav>
+	<!-- InstanceEndEditable -->
+<article>
+	<aside>
+			<div class="Notification">
+				<h4>Sản Phẩm Bán Chạy</h4>
+				<div>
+					<img class="Sanphambanchay" src="Images/Balenciaga/Triple-S-Trainer-Black-Red-2018.jpg">
+					<p class="tenspbc">Triple S Trainer Black Red 2018</p>
+				</div>
+				<div>
+					<img class="Sanphambanchay" src="Images/Vans/Vans%20Style%2036%20Amber%20Glow.jpg">
+					<p class="tenspbc">Vans Style 36 Amber Glow</p>
+				</div>
+				<div>
+					<img class="Sanphambanchay" src="Images/Converse/Converse%20Chuck%20Taylor%20All-Star%2070s%20Ox%20Comme%20des%20Garcons%20PLAY%20Black%20(1970s%20CDG).jpg">
+					<p class="tenspbc">Converse Chuck Taylor All-Star</p>
+				</div>
+				<div>
+					<img class="Sanphambanchay" src="Images/Converse/Converse%20Chuck%2070%20Low%20Top%20White%20(1970s).jpg">
+					<p class="tenspbc">Converse Chuck 70 Low Top White</p>
+				</div>
+			</div>
+		</aside>
+		
+		<!-- InstanceBeginEditable name="Adidas" -->
+		<section>
+		  <div>
+		    <ul>
+		      <li><a href="Adidas.html">Adidas</a></li>
+		      <li><a href="Balenciaga.html">Balenciaga</a></li>
+		      <li><a href="Converse.html">Converse</a></li>
+		      <li><a href="Nike.html">Nike</a></li>
+		      <li><a href="Vans.html">Vans</a></li>
+		      </ul>
+		    </div>
+		  <div class="sanphamhot"> <img class="anhsanpham" src="/Images/Converse/Converse Chuck 70 High Top White (1970s).jpg">
+		    <p>Converse Chuck 70 High Top White</p>
+		    <p><span>2300000</span><sup><u>đ</u></sup></p>
+		    <button onClick="themvaogiohang(this)" class="cart">Mua hàng</button><input type="text" name="soluong" id="soluong">
+			</div>
+		  <div class="sanphamhot"> <img class="anhsanpham" src="Images/Converse/Converse Chuck 70 Low Top Black (1970s).jpg">
+		    <p>Converse Chuck 70 Low Top Black</p>
+		    <p><span>5500000</span><sup><u>đ</u></sup></p>
+		    <button onClick="themvaogiohang(this)" class="cart">Mua hàng</button><input type="text" name="soluong" id="soluong">
+			</div>
+		  <div class="sanphamhot"> <img class="anhsanpham" src="Images/Converse/Converse Chuck 70 Low Top Sunflower (1970s).jpg">
+		    <p>Converse Chuck 70 Low Top Sunflower</p>
+		    <p><span>4750000</span><sup><u>đ</u></sup></p>
+		    <button onClick="themvaogiohang(this)" class="cart">Mua hàng</button><input type="text" name="soluong" id="soluong">
+			</div>
+		  <div class="sanphamhot"> <img class="anhsanpham" src="Images/Converse/Converse Chuck 70 Low Top White (1970s).jpg">
+		    <p class="tsp">Converse Chuck 70 Low Top White</p>
+		    <p><span>7900000</span><sup><u>đ</u></sup></p>
+		    <button onClick="themvaogiohang(this)" class="cart">Mua hàng</button><input type="text" name="soluong" id="soluong">
+			</div>
+		  <div class="sanphamhot"> <img class="anhsanpham" src="Images/Converse/Converse Chuck Taylor All-Star 70s Hi Comme des Garcons PLAY White (1970s CDG).jpg">
+		    <p>Converse Chuck Taylor All-Star 70s White</p>
+		    <p><span>3000000</span><sup><u>đ</u></sup></p>
+		    <button onClick="themvaogiohang(this)" class="cart">Mua hàng</button><input type="text" name="soluong" id="soluong">
+			</div>
+		  <div class="sanphamhot"> <img class="anhsanpham" src="Images/Converse/Converse Chuck Taylor All-Star 70s Ox Comme des Garcons PLAY Black (1970s CDG).jpg">
+		    <p>Converse Chuck Taylor All-Star 70s Black</p>
+		    <p><span>2300000</span><sup><u>đ</u></sup></p>
+		    <button onClick="themvaogiohang(this)" class="cart">Mua hàng</button><input type="text" name="soluong" id="soluong">
+			</div>
+		  </section>
+		<!-- InstanceEndEditable -->  </article>
+	<footer>
+			<p>Copyright&copy;2022 - AKKAY SHOE - Web bán giày hàng đầu Việt Nam</p><br>
+			<p>Website được phát triển để bán các loại giày chất lượng tại Việt Nam</p><br>
+			<p>Liên hệ: Akkayshoe@gmail.com</p>
+	</footer>
+	<script src="Javascript/Shopcart.js">
+	</script>
+</body>
+<!-- InstanceEnd --></html>

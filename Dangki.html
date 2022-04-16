@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="Css/dangki.css" rel="stylesheet" type="text/css">
+	<script>
+		function Dangki()
+		{
+			var ht=window.document.getElementById("hovaten").value;
+			var gt=window.document.getElementById("gioitinh").value;
+			var ns=window.document.getElementById("ngaysinh").value;
+			var email=window.document.getElementById("em").value;
+			var user=window.document.getElementById("username").value;
+			var mk=window.document.getElementById("mk").value;
+			var nlmk=window.document.getElementById("nlmk").value;
+			if(ht.length==0){
+				alert("Vui lòng nhập họ và tên");
+				window.document.getElementById("hovaten").focus();
+	 		return false;
+			}
+			if(gt==""){
+				alert("Vui lòng nhập  giới tính")
+				window.document.getElementById("gioitinh").focus();
+				return false;
+			}
+			if(ns==""){
+				alert("Vui lòng nhập  nhập ngày sinh")
+				window.document.getElementById("ngaysinh").focus();
+				return false;
+			}
+			x=/\w+@\w+\.\w+/;
+			if(email==""){
+				alert("Bạn chưa nhập email");
+				window.document.getElementById("em").value="";
+	  			document.getElementById("em").focus();return false
+				}
+				else if(x.test(email)==false){
+		  			alert("Email không đúng định dạng!");
+  					document.getElementById("em").focus(); return false
+  				}
+			if(user==""){
+				alert("Vui lòng nhập tên đăng nhập")
+				window.document.getElementById("username").focus();
+				return false;
+			}
+			if(mk==""){
+		  		alert("Vui lòng nhập mật khẩu");  
+				window.document.getElementById("mk").focus();
+				return false;
+		  	}
+		  	if(nlmk=="") {
+			  	alert("Hãy nhập lại mật khẩu");  
+			  	window.document.getElementById("nlmk").focus();
+				return false;
+			}
+			if(mk != nlmk){
+				  alert("Mật khẩu và nhập lại mật khẩu ko trùng nhau");
+				  window.document.getElementById("nlmk").focus();
+				  return false;
+				  }
+				  alert("Đăng ký thành công! Chúc mừng bạn");
+				  return true;
+	 	}
+	</script>
+</head>
+<body background="Images/Background.jpg">
+        <main>
+            <div class="container">
+            <div class="login-form">
+                <form action="Dangki.html" method="post" onSubmit="return Dangki()">
+                    <h1>Đăng kí thành viên</h1>
+                    <div class="input-box">
+                        <i ></i>
+                        <input type="text" id="hovaten" placeholder="Nhập họ và tên">
+</div>
+					<div class="input-box">
+                        <i ></i>
+                        <input type="text" id="gioitinh" placeholder="Nhập giới tính">
+                    </div>
+                    <div class="input-box">
+                        <i ></i>
+                        <input type="date" id="ngaysinh">
+                    </div>
+					<div class="input-box">
+                        <i ></i>
+                        <input type="text"  id="em" placeholder="Nhập email">
+                    </div>
+					<div class="input-box">
+                        <i ></i>
+                        <input type="text" id="username" placeholder="Nhập tên đăng nhập">
+                    </div>
+					<div class="input-box">
+                        <i ></i>
+                        <input type="password" id="mk" placeholder="Nhập mật khẩu">
+                    </div>
+					<div class="input-box">
+                        <i ></i>
+                        <input type="password" id="nlmk" placeholder="Nhập lại mật khẩu">
+                    </div>
+                    <div class="btn-box">
+                        <button type="submit">
+                        Đăng kí
+                    </button>
+                    </div>
+					<div class="reset">
+                        <button type="reset">
+                        Reset
+                    </button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </main>
+</body>
+</html>

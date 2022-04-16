@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Website bán giày</title>
+<!-- TemplateEndEditable -->
+<link href="../Css/style.css" rel="stylesheet" type="text/css">
+<script> function themvaogiohang(x)
+		{
+			var sanphamhot = x.parentElement.children; 
+			alert(sanphamhot[2].children[0].innerText);
+			
+		}
+</script>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body>
+	<header>
+		<img src="../Images/Header.jpg" width="100%" height="255px">
+		<h1 class="tenshop"><span>akkay&nbsp;</span> <i>shoes</i></h1>
+	</header>
+	<!-- TemplateBeginEditable name="nav" -->
+	<nav>
+	  <ul>
+	    <li><a href="../Trangchu.html">Trang chủ</a></li>
+	    |
+	    <li><a href="../Gioithieu.html">Giới thiệu</a></li>
+	    |
+	    <li><a href="#">Sản phẩm</a></li>
+	    |
+	    <li><a href="#">Đăng nhập</a></li>
+	    |
+	    <li><a href="#">Đăng kí </a></li>
+	    |
+	    <li><a href="#">Thanh toán</a></li>
+      </ul>
+    </nav>
+	<!-- TemplateEndEditable -->
+<article>
+	<aside>
+			<div class="Notification">
+				<h4>Sản Phẩm Bán Chạy</h4>
+				<div>
+					<img class="Sanphambanchay" src="../Images/Balenciaga/Triple-S-Trainer-Black-Red-2018.jpg">
+					<p class="tenspbc">Triple S Trainer Black Red 2018</p>
+				</div>
+				<div>
+					<img class="Sanphambanchay" src="../Images/Vans/Vans Style 36 Amber Glow.jpg">
+					<p class="tenspbc">Vans Style 36 Amber Glow</p>
+				</div>
+				<div>
+					<img class="Sanphambanchay" src="../Images/Converse/Converse Chuck Taylor All-Star 70s Ox Comme des Garcons PLAY Black (1970s CDG).jpg">
+					<p class="tenspbc">Converse Chuck Taylor All-Star</p>
+				</div>
+				<div>
+					<img class="Sanphambanchay" src="../Images/Converse/Converse Chuck 70 Low Top White (1970s).jpg">
+					<p class="tenspbc">Converse Chuck 70 Low Top White</p>
+				</div>
+			</div>
+		</aside>
+		<!-- TemplateBeginEditable name="section" -->
+		<section>
+		  <div>
+		    <h4>SẢN PHẨM HOT</h4>
+		    </div>
+		  <div class="sanphamhot"> <img class="anhsanpham" src="../Images/Balenciaga/Balenciaga Triple S Clear Sole Orange Grey Black.jpg">
+		    <p>Balenciaga Triple S Clear Sole Orange</p>
+		    <p>300,000<sup><u>đ</u></sup></p>
+		    <a href="#" class="cart">Mua hàng</a> </div>
+		  <div class="sanphamhot"> <img class="anhsanpham" src="../Images/Adidas/Yeezy Boost 700 Wave Runner.jpg">
+		    <p>Yeezy Boost 700 Wave Runner</p>
+		    <p>500,000<sup><u>đ</u></sup></p>
+		    <a href="" class="cart">Mua hàng</a> </div>
+		  <div class="sanphamhot"> <img class="anhsanpham" src="../Images/Converse/Converse Chuck Taylor All-Star 70s Ox Comme des Garcons PLAY Black (1970s CDG).jpg">
+		    <p>Puma RS-X Reinvention Lavende</p>
+		    <p>750,000<sup><u>đ</u></sup></p>
+		    <a href="" class="cart">Mua hàng</a> </div>
+		  <div class="sanphamhot"> <img class="anhsanpham" src="../Images/Converse/Converse Chuck 70 High Top White (1970s).jpg">
+		    <p class="tsp">Converse Chuck 70 High Top White</p>
+		    <p>900,000<sup><u>đ</u></sup></p>
+		    <a href="" class="cart">Mua hàng</a> </div>
+		  <div class="sanphamhot"> <img class="anhsanpham" src="../Images/Nike/Nike LeBron 9.jpg">
+		    <p>Nike LeBron 9</p>
+		    <p>900,000<sup><u>đ</u></sup></p>
+		    <a href="" class="cart">Mua hàng</a> </div>
+		  <div class="sanphamhot"> <img class="anhsanpham" src="../Images/Nike/Nike Air Max Pre-Day SE.jpg">
+		    <p>Nike Air Max Pre-Day SE</p>
+		    <p>1,300,000<sup><u>đ</u></sup></p>
+		    <a href="" class="cart">Mua hàng</a> </div>
+		  </section>
+		<!-- TemplateEndEditable --> </article>
+	<footer>
+			<p>Copyright&copy;2022 - AKKAY SHOE - Web bán giày hàng đầu Việt Nam</p><br>
+			<p>Website được phát triển để bán các loại giày chất lượng tại Việt Nam</p><br>
+			<p>Liên hệ: Akkayshoe@gmail.com</p>
+	</footer>
+	<script src="Javascript/Shopcart.js">
+	</script>
+</body>
+</html>
